@@ -1,0 +1,82 @@
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.filters {
+  background-color: rgb(255, 255, 255);
+  margin: 5rem 5rem 0 5rem;
+  display: flex;
+  gap: 1rem;
+}
+#brands {
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.filters h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+}
+#apply {
+  color: #0072B8;
+  border: 0.1px solid rgb(118, 118, 118);
+  background-color: #ffffff;
+  font-size: 18px;
+  padding: 0 0.5rem;
+}
+.cardwrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  padding-bottom: 2rem;
+border: 1px solid gray;
+}
+.cardwrapper button {
+  width: 15rem;
+  padding: 0.5rem 1rem ;
+  background-color: #0072B8;
+  color: aliceblue;
+  border: none;
+}
+.cardwrapper button:hover{
+  background-color: #226a19;
+}
+.cardConatiner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  margin: 2rem 5rem;
+  /* height: 100vh; */
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.card {
+  padding: 1rem;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 28rem;
+  width: 20rem;
+  margin: 2rem ;
+}
+
+
+.cardTitle {
+  padding: 0.5rem;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+}
+.cardTitle h3 {
+  font-size: 24px;
+  font-weight: 100;
+}
+.card img {
+
+  width: 30rem;
+  height: 20rem;
+  object-fit: contain;
+}

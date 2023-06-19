@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FEEDBACK</title>
+    <link rel="stylesheet" href="./stylesheets/feedback.css" />
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Verdana;
+        flex-direction: column;
+        background-color: rgb(209, 225, 248);
+      }
+      form {
+        margin: 2rem;
+        padding: 2rem;
+        border: 1px solid black;
+        background-color: rgb(255, 255, 255);
+      }
+      input,
+      textarea {
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 5px 10px;
+        margin: 1rem 0;
+        width: 389px;
+      }
+      .feedback {
+        padding: 3rem;
+      }
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem ;
+      }
+      .feedbackBtn{
+        width: 100px;
+        background-color: rgb(24, 180, 94);
+        border: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav1">
+      <div class="navLeft">
+        <a href="../public/products.html?id=brand">PRODUCTS</a>
+        <a href="../public/about.html">ABOUT</a>
+      </div>
+      <a href="index.html" class="navTitle">MOBILE STORE</a>
+      <div class="navLeft">
+        <a href="../public/login.html">LOGIN</a>
+        <a href="../public/feedback.html  ">FEEDBACK</a>
+      </div>
+    </div>
+    <div class="feedback">
+      <form method="get" action="feedback.php">
+        <h2>FEEDBACK FORM</h2>
+        <p>Name</p>
+        <input type="text" name="name" required/><br />
+        <p>Subject</p>
+        <input type="text" name="subject" required/><br />
+        <!-- <p>Message</p> -->
+        <textarea
+          placeholder="Enter your feedback here"
+          name="message"
+          rows="8"
+          cols="50"
+          required
+        ></textarea>
+        <br />
+        <input type="submit" value="submit" class="feedbackBtn" />
+      </form>
+    </div>
+  </body>
+</html>
